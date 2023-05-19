@@ -31,7 +31,13 @@
 #include <fstream>
 #include <iostream>
 #include <cassert>
-#include <math.h>
+
+#if defined(__ANDROID__)
+  #include <cmath>
+#else
+  #include <math.h>
+#endif
+
 
 #define TFLITE_EXAMPLE_CHECK(x)                              \
   if (!(x)) {                                                \
