@@ -37,6 +37,7 @@
 #else
   #include <math.h>
 #endif
+#include <cstdint>
 
 
 #define TFLITE_EXAMPLE_CHECK(x)                              \
